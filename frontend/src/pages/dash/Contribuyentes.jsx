@@ -81,8 +81,6 @@ export default function Contribuyentes() {
                 const nits = contribuyentes.map(item => item.nit)
                 const contratos = await Contratos(nits)
                 setContribuyentesLoc(contratos)
-                console.log("CONTRI:", contribuyentes)
-                console.log("CONTRATOS:", contratos)
             }
 
 
