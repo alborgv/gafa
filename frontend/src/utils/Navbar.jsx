@@ -6,6 +6,8 @@ import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
 import { Link } from 'react-router-dom';
 
+import icon from '../assets/icono.svg'
+
 export default function Navbar() {
     const { logoutUser, user } = useContext(AuthContext);
     const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +45,7 @@ export default function Navbar() {
             <nav className="bg-white shadow-sm px-4 py-3 flex justify-between">
                 <Link to="/" className="flex items-center text-xl">
                     <img
-                        src="./src/assets/icono.svg"
+                        src={icon}
                         className="w-12 h-12 cursor-pointer duration-500 ml-10 mr-3"
                     />
                     <span className="text-3xl font-anton font-bold">GAFA</span>
