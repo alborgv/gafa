@@ -201,6 +201,7 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
+    "https://gafa-frontend-sooty.vercel.app/",
     "http://localhost:5173",
     "http://localhost:3000",
 ]
